@@ -1,0 +1,6 @@
+[submodule "HX711"]
+	path = HX711
+	url = https://github.com/bogde/HX711.git
+[submodule "ArduinoJoystickLibrary"]
+	path = ArduinoJoystickLibrary
+	url = https://github.com/MHeironimus/ArduinoJoystickLibrary.git
