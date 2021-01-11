@@ -15,7 +15,7 @@ __v1.0, 2021 Jan, 1st__
 
 ----
 
-- <big>**English version: [here](#eng)**</big>
+## English version: [here](#eng)
 
 ## 0. 和市面上现有设计的区别
 - 常见的模拟器用手刹主要有两种原理：
@@ -43,46 +43,52 @@ __v1.0, 2021 Jan, 1st__
 
     - **需要自己加工的零件**: 需要购买原料进行机加工或者3D打印
 
-    |零件|数量|参考图片|参考链接|备注|
-    |----|----|----|---|----|
-    |传感器支架|1|![](img/raw_rack.png)|[淘宝](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4a632e8d7Rbkiu&id=553634051051&_u=b3gep5n89f8)|建议买12.5mm长，60×15×4mm的U型铝槽a进行加工。装配时可能需要对手刹进行打磨（手刹对应位置宽度因为有焊缝，尺寸略宽，为52±0.5mm。 铝槽的内径为52mm。 |
-    |传感器和支架间的垫片 |1|参见下面的CAD图|机加工| 用3mm的铝板自制。或者以100%的填充率3D打印可能也行。 |
-    |传感器和弹簧导轨间的垫片 |1|参见下面的CAD图 |机加工|用3mm的铝板自制。或者以100%的填充率3D打印可能也行。 |
-    |弹簧导轨护套 |1 (1+1+1)|参见 "upper_spring_sleeve.stl", "lower_spring_sleeve.stl" and "spring_rod_sleeve.stl".|3D打印| |
-    |弹簧限位|1|参见 "stopper.stl".|3D打印||
-    |电路板外壳 |1(1+1+1)|参见 "lower_shell.stl", "upper_shell.stl", "hook.stl" and "nut.stl" |3D打印||
+        |零件|数量|参考图片|参考链接|备注|
+        |----|----|----|---|----|
+        |传感器支架|1|![](img/raw_rack.png)|[淘宝](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4a632e8d7Rbkiu&id=553634051051&_u=b3gep5n89f8)|建议买12.5mm长，60×15×4mm的U型铝槽a进行加工。装配时可能需要对手刹进行打磨（手刹对应位置宽度因为有焊缝，尺寸略宽，为52±0.5mm。 铝槽的内径为52mm。 |
+        |传感器和支架间的垫片 |1|参见下面的CAD图|机加工| 用3mm的铝板自制。或者以100%的填充率3D打印可能也行。 |
+        |传感器和弹簧导轨间的垫片 |1|参见下面的CAD图 |机加工|用3mm的铝板自制。或者以100%的填充率3D打印可能也行。 |
+        |弹簧导轨护套 |1 (1+1+1)|参见 "upper_spring_sleeve.stl", "lower_spring_sleeve.stl" and "spring_rod_sleeve.stl".|3D打印| |
+        |弹簧限位|1|参见 "stopper.stl".|3D打印||
+        |电路板外壳 |1(1+1+1)|参见 "lower_shell.stl", "upper_shell.stl", "hook.stl" and "nut.stl" |3D打印||
 
-    |螺丝螺母垫片|数量|备注|
-    |----|----|----|
-    |M8*16 沉头螺丝 |1|固定手刹和传感器支架，顶部 |
-    |M8*16 螺丝 |1|固定手刹和传感器支架，底部 |
-    |M8 垫片 |1| |
-    |M5*28 螺丝 |2|将传感器固定在支架上 |
-    |M5 垫片和螺母 |若干|可能也可以用M5的垫片代替传感器垫片|
-    |M4*14 沉头螺丝 |2|传感器和弹簧导柱（不锈钢定位销）间垫片的固定|
-    |M3*12 沉头螺丝 |1|固定弹簧导柱，螺丝长度取决于你买到的固定销的螺纹深度|
-    |M3*16 螺丝 |4|固定弹簧导轨护套 |
-    |M3*18 螺丝 |1|固定电路板外壳 |
-    |M3*20 螺丝 |2|固定电路板外壳 |
-    |M3*25 螺丝|1|固定电路板外壳 |
-    |M3 垫片和螺母 |若干||
+    - **标准件**
+    
+        |螺丝螺母垫片|数量|备注|
+        |----|----|----|
+        |M8*16 沉头螺丝 |1|固定手刹和传感器支架，顶部 |
+        |M8*16 螺丝 |1|固定手刹和传感器支架，底部 |
+        |M8 垫片 |1| |
+        |M5*28 螺丝 |2|将传感器固定在支架上 |
+        |M5 垫片和螺母 |若干|可能也可以用M5的垫片代替传感器垫片|
+        |M4*14 沉头螺丝 |2|传感器和弹簧导柱（不锈钢定位销）间垫片的固定|
+        |M3*12 沉头螺丝 |1|固定弹簧导柱，螺丝长度取决于你买到的固定销的螺纹深度|
+        |M3*16 螺丝 |4|固定弹簧导轨护套 |
+        |M3*18 螺丝 |1|固定电路板外壳 |
+        |M3*20 螺丝 |2|固定电路板外壳 |
+        |M3*25 螺丝|1|固定电路板外壳 |
+        |M3 垫片和螺母 |若干||
 
-## 2. 五金件 
+## 2. 五金件的加工 
 
 ### 传感器支架：
 - 由买到的U型铝槽加工而来。
+
     ![](img/rack_cad.jpg)
 
 
 - 加工结果：
+
     ![](img/sensor_rack.jpg)
 
 ### 弹簧导轨垫片：
 - CAD图：
+
     ![](img/shaft_rack.jpg)
 
 ### 传感器支架与传感器间垫片：
 - CAD图:
+
     ![](img/spacer.jpg)
 
 ## 3. 电路接线：
@@ -159,46 +165,50 @@ __v1.0, 2021 Jan, 1st__
 
     - **Part 2**: Some of them need some machining.
 
-    |Homebrew parts|Number|Image|REF link|Note|
-    |----|----|----|---|----|
-    |Sensor rack|1|![](img/raw_rack.png)|[淘宝](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4a632e8d7Rbkiu&id=553634051051&_u=b3gep5n89f8)|Check the CAD drawing below. I use a 12.5mm long 60×15×4mm U-shape aluminum channel to make this part. You may need to file the handbrake a little bit since its width is around 52±0.5mm, while the width of the aluminum slot is 52mm. |
-    |Spacer for sensor and its'rack |1|Refer to the .stl/.png.|Homebrew| Check the CAD drawing below. I cut it from a 3mm aluminum plate. I think 3D print it is also possible. |
-    |Spacer for sensor and spring rail |1|Refer to the .stl/.png. |Homebrew|Check the CAD drawing below. I cut it from a 3mm aluminum plate. I think 3D print it is also possible. |
-    |Sleeve set |1 (1+1+1)|Refer to "upper_spring_sleeve.stl", "lower_spring_sleeve.stl" and "spring_rod_sleeve.stl".|Homebrew| 3D printed.|
-    |Stopper|1|Refer to "stopper.stl".|Homebrew|3D printed. |
-    |Circuitry's case |1(1+1+1)|Refer to "lower_shell.stl", "upper_shell.stl", "hook.stl" and "nut.stl" |Homebrew|3D printed.|
+        |Homebrew parts|Number|Image|REF link|Note|
+        |----|----|----|---|----|
+        |Sensor rack|1|![](img/raw_rack.png)|[淘宝](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4a632e8d7Rbkiu&id=553634051051&_u=b3gep5n89f8)|Check the CAD drawing below. I use a 12.5mm long 60×15×4mm U-shape aluminum channel to make this part. You may need to file the handbrake a little bit since its width is around 52±0.5mm, while the width of the aluminum slot is 52mm. |
+        |Spacer for sensor and its'rack |1|Refer to the .stl/.png.|Homebrew| Check the CAD drawing below. I cut it from a 3mm aluminum plate. I think 3D print it is also possible. |
+        |Spacer for sensor and spring rail |1|Refer to the .stl/.png. |Homebrew|Check the CAD drawing below. I cut it from a 3mm aluminum plate. I think 3D print it is also possible. |
+        |Sleeve set |1 (1+1+1)|Refer to "upper_spring_sleeve.stl", "lower_spring_sleeve.stl" and "spring_rod_sleeve.stl".|Homebrew| 3D printed.|
+        |Stopper|1|Refer to "stopper.stl".|Homebrew|3D printed. |
+        |Circuitry's case |1(1+1+1)|Refer to "lower_shell.stl", "upper_shell.stl", "hook.stl" and "nut.stl" |Homebrew|3D printed.|
 
-    |Screws, nuts and spacers|Number|Note|
-    |----|----|----|
-    |M8*16 countersunk screw |1|Fixing the handbrake and sensor rack, top |
-    |M8*16 screw |1|Fixing the handbrake and sensor rack, bottom |
-    |M8 spacer |1|With the M8 screw |
-    |M5*28 screw |2|Fixing the sensor and its' rack |
-    |M5 spacer & nut |2+|You may need more to spacing the sensor and its' rack. Or, instead of making your own sensor spacer, use as many M5 spacers you need. |
-    |M4*14 countersunk screw |2|Fixing the spacer for sensor and spring rail (rod). |
-    |M3*12 countersunk screw |1|Fixing the rod. The length depends on your rod. |
-    |M3*16 screw |4|Fixing the sleeve set to the handbrake |
-    |M3*18 screw |1|Fixing the circuitry's case |
-    |M3*20 screw |2|Fixing the circuitry's case |
-    |M3*25 screw|1|Fixing the circuitry's case |
-    |M3 spacer and nut |many||
+    - **Part 3**: Screws, nuts, and spacers
+        |Screws, nuts, and spacers|Number|Note|
+        |----|----|----|
+        |M8*16 countersunk screw |1|Fixing the handbrake and sensor rack, top |
+        |M8*16 screw |1|Fixing the handbrake and sensor rack, bottom |
+        |M8 spacer |1|With the M8 screw |
+        |M5*28 screw |2|Fixing the sensor and its' rack |
+        |M5 spacer & nut |2+|You may need more to spacing the sensor and its' rack. Or, instead of making your own sensor spacer, use as many M5 spacers you need. |
+        |M4*14 countersunk screw |2|Fixing the spacer for sensor and spring rail (rod). |
+        |M3*12 countersunk screw |1|Fixing the rod. The length depends on your rod. |
+        |M3*16 screw |4|Fixing the sleeve set to the handbrake |
+        |M3*18 screw |1|Fixing the circuitry's case |
+        |M3*20 screw |2|Fixing the circuitry's case |
+        |M3*25 screw|1|Fixing the circuitry's case |
+        |M3 spacer and nut |many||
 
 ## 2. Hardware 
 
 ### Sensor rack:
 - You need to machine from the U-shape aluminum rack.
+
     ![](img/rack_cad.jpg)
 
-
 - Result:
+
     ![](img/sensor_rack.jpg)
 
 ### Shaft rack:
 - CAD drawing:
+
     ![](img/shaft_rack.jpg)
 
 ### Spacer:
 - CAD drawing:
+
     ![](img/spacer.jpg)
 
 ## 3. Board wiring:
