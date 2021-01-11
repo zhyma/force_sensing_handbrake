@@ -130,6 +130,7 @@ __v1.0, 2021 Jan, 1st__
 ## 8. 写入Arduino固件:
 - 源代码为“handbrake/handbrake.ino”
 - 需要根据个人习惯及具体购买到的传感器手动调整代码中将传感器数据映射至摇杆的几个参数。括号内依次为实时传感器数据，传感器数据下限，传感器数据上限，映射至摇杆的下限，映射至摇杆的上限。
+
     ```long zaxis = map(force, 0, 1100000, 0, 255);```
 
 ## 完工
@@ -251,5 +252,6 @@ __v1.0, 2021 Jan, 1st__
 - The source code is "handbrake/handbrake.ino".
 - You may need to adjust the mapping between the sensor's raw data and the final output of the joystick. 
     Parameters are: realtime raw data (force), raw data lower bound, raw data upper bound, joystick value lower bound, joystick value upper bound.
+    
     ```long zaxis = map(force, 0, 1100000, 0, 255);```
 ## Enjoy it!
